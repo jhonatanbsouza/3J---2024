@@ -32,9 +32,6 @@ span{
     width: 100%;
     font-size: 32px;
 }
-.botoes{
- display: block;   
-}
 
 .botao{
     background-color: var(--botao-inativo);
@@ -53,10 +50,25 @@ span{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
 }
+.botoes{
+ display: block;   
+}
 .botao:first-child{
     border-radius: 20px 20px 0 0;
 }
 
 .botao:last-child{
     border-radius: 0px 0px 20px 20px;
+}
+
+@media screen and (min-width: 700px){
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 20px 0 0 20px;
+    }
+    .botao:last-child{
+        border-radius: 0 20px 20px 0;
+    }
 }
