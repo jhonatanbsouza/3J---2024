@@ -8,10 +8,11 @@
 }
 
 *{
-    background-color: var(--cor-de-fundo);
     color: var(--branco);
 }
-
+body{
+    background-color: var(--cor-de-fundo);
+}
 span{
     color: var(--verde);
 }
@@ -70,6 +71,21 @@ span{
 .aba-conteudo.ativo{
     display: block;
 }
+.abas-textos{
+    background-color: var(--botao-inativo);
+    padding: 40px;
+    border-radius: 15px;
+}
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+
 @media screen and (min-width: 700px){
     .botoes{
         display: flex;
