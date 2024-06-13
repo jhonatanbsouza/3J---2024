@@ -1,5 +1,8 @@
 const botoes = document.querySelectorAll(".botao");
-const conteudo = document.querySelectorAll(".aba-conteudo")
+const conteudo = document.querySelectorAll(".aba-conteudo");
+const tempo = document.querySelectorAll(".contador");
+// guarda as divs contador na variável tempo
+console.log(tempo);
 for(let i = 0; i < botoes.length ; i++){
     botoes[i].onclick = function(){
         for (let j = 0 ; j < botoes.length ; j++){
