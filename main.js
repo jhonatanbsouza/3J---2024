@@ -1,6 +1,22 @@
 const botoes = document.querySelectorAll(".botao");
 const conteudo = document.querySelectorAll(".aba-conteudo");
 const tempo = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date(2025,10,20);
+const agora = new Date();
+
+let segundos = Math.floor((tempoObjetivo1-agora)/1000)
+let minutos = Math.floor(segundos/60)
+let horas = Math.floor(minutos/60)
+let dias = Math.floor(horas/24)
+
+segundos = segundos%60
+minutos = minutos%60
+horas = horas%24
+
+tempo[0].textContent = `Faltam ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`
+
+
+
 // guarda as divs contador na variável tempo
 console.log(tempo);
 for(let i = 0; i < botoes.length ; i++){
